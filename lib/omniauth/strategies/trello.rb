@@ -5,6 +5,7 @@ module OmniAuth
   module Strategies
     class Trello < OmniAuth::Strategies::OAuth
       option :name, "trello"
+      option :expiration, 'never'
       option :client_options, { :site => "https://trello.com",
                                 :request_token_path => "/1/OAuthGetRequestToken",
                                 :access_token_path => "/1/OAuthGetAccessToken",
